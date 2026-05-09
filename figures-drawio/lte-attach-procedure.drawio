@@ -1,0 +1,199 @@
+<mxfile host="65bd71144e">
+    <diagram name="LTE Attach Procedure" id="lte-attach-procedure">
+        <mxGraphModel dx="820" dy="1350" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1400" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="bg_sib" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#888888;dashed=1;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="80" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="bg_paging" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fcfafe;strokeColor=#7a378b;dashed=1;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="150" width="580" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="bg_prach" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fafcfe;strokeColor=#1f77b4;dashed=1;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="270" width="320" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="bg_rrc" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fafcfe;strokeColor=#1f77b4;dashed=1;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="390" width="320" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="bg_nas" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8fcf8;strokeColor=#22B427;dashed=1;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="560" width="580" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="bg_data" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fefdfa;strokeColor=#d95f02;dashed=1;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="830" width="580" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="h_ue" value="UE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f8fc;strokeColor=#888888;fontStyle=1;fontSize=20;fontColor=#212121;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="20" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="h_enb" value="eNodeB" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f8fc;strokeColor=#888888;fontStyle=1;fontSize=20;fontColor=#212121;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="20" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="h_mme" value="MME" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f8fc;strokeColor=#888888;fontStyle=1;fontSize=20;fontColor=#212121;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="20" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="c_sib" value="SIB&lt;br&gt;Acq" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#888888;verticalAlign=middle;fontStyle=1;fontSize=16;fontColor=#888888;collapsible=0;container=0;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="80" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="c_paging" value="Paging" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fcfafe;strokeColor=#7a378b;verticalAlign=middle;fontStyle=1;fontSize=16;fontColor=#7a378b;collapsible=0;container=0;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="150" width="80" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="c_prach" value="PRACH" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fafcfe;strokeColor=#1F77B4;verticalAlign=middle;fontStyle=1;fontSize=16;fontColor=#1f77b4;collapsible=0;container=0;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="270" width="80" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="c_rrc" value="RRC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fafcfe;strokeColor=#1F77B4;verticalAlign=middle;fontStyle=1;fontSize=16;fontColor=#1f77b4;collapsible=0;container=0;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="390" width="80" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="c_nas" value="NAS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8fcf8;strokeColor=#22B427;verticalAlign=middle;fontStyle=1;fontSize=16;fontColor=#22B427;collapsible=0;container=0;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="560" width="80" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="c_data" value="User&lt;br&gt;Data" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fefdfa;strokeColor=#D95F02;verticalAlign=middle;fontStyle=1;fontSize=16;fontColor=#d95f02;collapsible=0;container=0;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="830" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="ll_ue" style="endArrow=none;html=1;strokeColor=#bbbbbb;dashed=1;strokeWidth=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="70" as="sourcePoint"/>
+                        <mxPoint x="200" y="910" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ll_enb" style="endArrow=none;html=1;strokeColor=#bbbbbb;dashed=1;strokeWidth=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="460" y="70" as="sourcePoint"/>
+                        <mxPoint x="460" y="910" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ll_mme" style="endArrow=none;html=1;strokeColor=#bbbbbb;dashed=1;strokeWidth=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="720" y="70" as="sourcePoint"/>
+                        <mxPoint x="720" y="910" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="t_sib" value="SIB Configuration Acquisition" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="90" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_sib" value="" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="460" y="110" as="sourcePoint"/>
+                        <mxPoint x="200" y="110" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="t_s1ap_paging" value="S1AP Paging" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="160" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_s1ap_paging" value="" style="endArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="720" y="180" as="sourcePoint"/>
+                        <mxPoint x="460" y="180" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="t_rrc_paging" value="RRC Paging (PCCH)" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="210" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_rrc_paging" value="" style="endArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="460" y="230" as="sourcePoint"/>
+                        <mxPoint x="200" y="230" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="t_prach" value="PRACH Preamble" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="280" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_prach" value="" style="endArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="300" as="sourcePoint"/>
+                        <mxPoint x="460" y="300" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="t_rar" value="RA Response" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="330" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_rar" value="" style="endArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="460" y="350" as="sourcePoint"/>
+                        <mxPoint x="200" y="350" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="t_rrc_req" value="RRC Connection Request" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="400" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_rrc_req" value="" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="420" as="sourcePoint"/>
+                        <mxPoint x="460" y="420" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="t_rrc_setup" value="RRC Connection Setup" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="450" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_rrc_setup" value="" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="470" as="sourcePoint"/>
+                        <mxPoint x="460" y="470" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="t_rrc_complete" value="RRC Connection Setup Complete" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="500" width="260" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_rrc_complete" value="" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="520" as="sourcePoint"/>
+                        <mxPoint x="460" y="520" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="t_attach_req" value="NAS Attach Request" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="570" width="520" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_attach_req" value="" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="590" as="sourcePoint"/>
+                        <mxPoint x="720" y="590" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="t_auth" value="NAS Authentication Procedure" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="620" width="520" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_auth" value="" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="640" as="sourcePoint"/>
+                        <mxPoint x="720" y="640" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="t_security" value="NAS Security Mode Procedure" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="670" width="520" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_security" value="" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="690" as="sourcePoint"/>
+                        <mxPoint x="720" y="690" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="t_attach_accept" value="NAS Attach Accept" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="720" width="520" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_attach_accept" value="" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="740" as="sourcePoint"/>
+                        <mxPoint x="720" y="740" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="t_attach_complete" value="NAS Attach Complete" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="770" width="520" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_attach_complete" value="" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="790" as="sourcePoint"/>
+                        <mxPoint x="720" y="790" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="t_data" value="USER DATA EXCHANGE" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="840" width="520" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_data" value="" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="860" as="sourcePoint"/>
+                        <mxPoint x="720" y="860" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

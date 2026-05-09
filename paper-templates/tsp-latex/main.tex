@@ -1,0 +1,132 @@
+% Tech Science Press
+
+%=================================================================
+\documentclass[journal,article,submit,moreauthors,pdftex]{Definitions/tsp}
+\input{Definitions/package}
+\include{Definitions/unicode}
+
+%----------
+% journal
+%----------
+% Choose between the following TSP journals:
+% biocell, chd, cmc, cmes, csse, dedt, ee, fdmp, fhmt, iasc, icces, ijimh, jai,
+% jbd, jbic, jcs, jihpp, jimh, jiot, jnm, jpm, jqc, jrm, or, phyton, po, rig, sdhm.
+
+%---------
+% article type
+%---------
+% Default is "article". May be replaced by:
+% abstract, analysis, biographical item, case report, commentary, communication,
+% correction, editorial, guideline, introduction, mini review, open forum, perspective,
+% proceedings, protocol, retraction, review, short communication, technical report,
+% theory, tutorial, viewpoint.
+
+%----------
+% submit status
+%----------
+% The class option "submit" will be flipped to "accept" by the editorial office on acceptance.
+
+%------------------
+% moreauthors / oneauthor
+%------------------
+% Use "oneauthor" if there is only one author, otherwise "moreauthors".
+
+%---------
+% pdftex
+%---------
+% Use "pdftex" with pdfLaTeX. Remove for LaTeX + dvi2pdf with eps figures.
+
+%=================================================================
+% Internal commands, do not modify
+\continuouspages{yes}
+\firstpage{1}
+\makeatletter
+\setcounter{page}{\@firstpage}
+\makeatother
+\pubvolume{1}
+\issuenum{1}
+\articlenumber{12345}
+\pubyear{2025}
+\copyrightyear{2025}
+\datereceived{Day Month Year}
+\dateaccepted{Day Month Year}
+\dateonlinefirst{}
+\datepublished{}
+%\datecorrected{}
+%\dateretracted{}
+%\hreflink{https://doi.org/}
+
+%=================================================================
+% Packages already loaded by the class file: fontenc, inputenc, calc, indentfirst,
+% fancyhdr, graphicx, epstopdf, lastpage, ifthen, lineno, float, amsmath, setspace,
+% enumitem, mathpazo, booktabs, titlesec, etoolbox, tabto, xcolor, soul, multirow,
+% microtype, tikz, refcount, totcount, attrib, amsthm, upgreek, array, tabularx,
+% pbox, ragged2e, tocloft, adjustbox, enotez.
+% Add additional packages here.
+
+%=================================================================
+% Math environments provided by the TSP class:
+% Theorem, Lemma, Corollary, Proposition, Characterization, Property, Problem,
+% Example, ExamplesandDefinitions, Hypothesis, Remark, Definition, Notation,
+% Assumption. Use the proof environment for proofs.
+
+%=================================================================
+% Title (capitalized)
+\Title{Paper Title}
+%\TitleCitation{Short Title}
+
+% Author ORCID IDs, fill in or remove
+\newcommand{\orcidauthorA}{0000-0000-0000-0000}
+\newcommand{\orcidauthorB}{0000-0000-0000-0000}
+
+% Authors, expanded form
+\Author{First Author\textsuperscript{1}\orcidA{}, Second Author\textsuperscript{2,*}\orcidB{}}
+%\AuthorCitation{Lastname F, Lastname F}
+
+% Authors for PDF metadata
+\AuthorNames{First Author and Second Author}
+
+% Affiliations
+\address{%
+\textsuperscript{1} Department, Institution, City, Country \\
+\textsuperscript{2} Department, Institution, City, Country
+}
+
+% Corresponding author
+\corres{Corresponding Author: Second Author. Email: corresponding@example.com}
+
+% Optional notes
+%\firstnote{These authors contributed equally to this work}
+%\secondnote{}
+
+% Abstract (no blank lines, no \\ inside)
+\abstract{Type the abstract here. TSP research papers expect 200 to 400 words. Reviews expect 150 to 300 words. The abstract runs continuously without internal structure markers and contains no citations. Define every abbreviation in full on first use. Repeat the definition once in the main text.}
+
+% Three to ten pertinent keywords
+\keyword{keyword one; keyword two; keyword three}
+
+% Optional indices
+%\PACS{}
+%\MSC{}
+%\JEL{}
+
+\begin{document}
+
+\section{Introduction} \label{sect:introduction}
+
+Introduction text. State the problem, the gap in prior work, and the contribution of this paper.
+
+\section{Related Work} \label{sect:related}
+
+\section{Methodology} \label{sect:method}
+
+\section{Results} \label{sect:results}
+
+\section{Discussion} \label{sect:discussion}
+
+\section{Conclusion} \label{sect:conclusion}
+
+\bibliographystyle{Definitions/vancouver}
+\bibliography{references}
+
+\end{document}

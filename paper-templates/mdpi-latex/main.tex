@@ -1,0 +1,56 @@
+% MDPI generic article skeleton.
+% For a real submission, download the journal-specific class file from the target MDPI journal's "Instructions for Authors" page (e.g., Definitions/mdpi.cls), drop it next to main.tex, and switch the documentclass line below.
+
+\documentclass[a4paper,10pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{cite}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{url}
+
+\title{Paper Title}
+\author{First Author$^{1}$, Second Author$^{2,*}$\\
+$^{1}$Department, Institution, City, Country\\
+$^{2}$Department, Institution, City, Country\\
+$^{*}$Corresponding author: \texttt{email@example.com}}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The abstract goes here. MDPI journals usually allow up to 200 words for research articles and up to 300 for reviews. Summarise motivation, methods, results, and significance.
+\end{abstract}
+
+\noindent\textbf{Keywords:} keyword one, keyword two, keyword three
+
+\section{Introduction}
+\label{sec:introduction}
+
+Introduction text. State the problem, the gap in prior work, and the contribution of this paper.
+
+\section{Related Work}
+\label{sec:related}
+
+\section{Materials and Methods}
+\label{sec:method}
+
+\section{Results}
+\label{sec:results}
+
+\section{Discussion}
+\label{sec:discussion}
+
+\section{Conclusions}
+\label{sec:conclusion}
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

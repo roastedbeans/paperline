@@ -1,0 +1,97 @@
+---
+alwaysApply: true
+---
+# Specification Detection System Standards
+
+## Documentation Policy
+
+**Do NOT generate or create `.md` files unless explicitly requested by the user.**
+
+- No automatic creation of README, CHANGELOG, or documentation files
+- Only create markdown documentation when the user specifically asks for it
+- Focus on code implementation, not documentation generation
+
+---
+
+## System Optimization Principles
+
+When working on the specification-based detection system, always consider optimized approaches:
+
+### 1. State Machine Efficiency
+
+- Minimize state transitions and redundant checks
+- Use early-exit patterns to avoid unnecessary processing
+- Cache computed values and reuse intermediate results
+
+```python
+# ✅ GOOD - Early exit with cached values
+def detect_specification(data):
+    if data in cache:
+        return cache[data]
+    
+    if not meets_threshold(data):
+        return None  # Early exit
+    
+    result = expensive_computation(data)
+    cache[data] = result
+    return result
+```
+
+### 2. Data Processing
+
+- Batch operations where possible
+- Stream data instead of loading everything into memory
+- Use generators for large datasets
+
+```python
+# ✅ GOOD - Generator for memory efficiency
+def process_specifications(csv_path):
+    for chunk in pd.read_csv(csv_path, chunksize=1000):
+        yield detect_patterns(chunk)
+
+# ❌ BAD - Load entire dataset
+def process_specifications(csv_path):
+    data = pd.read_csv(csv_path)
+    return detect_patterns(data)
+```
+
+### 3. Detection Algorithms
+
+- Prioritize fast heuristics before expensive ML models
+- Use hybrid approaches: rule-based + statistical
+- Profile hot paths and optimize bottlenecks
+
+### 4. Threshold Learning
+
+- Adaptively learn thresholds from data
+- Balance precision/recall based on use case
+- Validate thresholds on representative samples
+
+### 5. Code Structure
+
+- Keep detection logic modular and testable
+- Separate concerns: parsing, feature extraction, classification
+- Use type hints for clarity and IDE support
+
+```python
+# ✅ GOOD - Clear separation and types
+def extract_features(data: pd.DataFrame) -> Dict[str, float]:
+    """Extract statistical features from data."""
+    return {
+        'mean': data['value'].mean(),
+        'variance': data['value'].var()
+    }
+
+def classify_specification(features: Dict[str, float]) -> bool:
+    """Classify if data matches specification."""
+    return features['variance'] < learned_thresholds['variance']
+```
+
+---
+
+## Performance Considerations
+
+- Measure before optimizing (use `cProfile`, `line_profiler`)
+- Focus on algorithmic improvements over micro-optimizations
+- Document performance characteristics of key functions
+- Consider space-time tradeoffs explicitly

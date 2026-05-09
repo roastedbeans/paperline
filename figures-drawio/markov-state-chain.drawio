@@ -1,0 +1,135 @@
+<mxfile host="65bd71144e">
+    <diagram name="Markov Chain over 4-Tuple State" id="markov-state-chain">
+        <mxGraphModel dx="128" dy="203" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="600" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+
+                <!-- =================================================================
+                     Title
+                     ================================================================= -->
+                <mxCell id="t_title" value="First-order Markov chain over the four-tuple state (excerpt)" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=20;fontStyle=1;fontColor=#212121;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="20" width="900" height="30" as="geometry"/>
+                </mxCell>
+
+                <!-- =================================================================
+                     Legend (per DESIGN_GUIDELINES.md, section "Legend")
+                     fillColor=#ffffff strokeColor=#999999 fontSize=15 bold center
+                     ================================================================= -->
+                <mxCell id="c_legend" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="80" width="760" height="50" as="geometry"/>
+                </mxCell>
+
+                <!-- RRC chip -->
+                <mxCell id="legend_rrc_chip" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d6e9f8;strokeColor=#1f77b4;strokeWidth=1.2;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="95" width="24" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_rrc_lbl" value="RRC state" style="text;html=1;align=left;strokeColor=none;fillColor=none;fontSize=14;fontColor=#212121;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="222" y="95" width="100" height="20" as="geometry"/>
+                </mxCell>
+
+                <!-- NAS chip -->
+                <mxCell id="legend_nas_chip" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4c4;strokeColor=#d95f02;strokeWidth=1.2;" parent="1" vertex="1">
+                    <mxGeometry x="332" y="95" width="24" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_nas_lbl" value="NAS state" style="text;html=1;align=left;strokeColor=none;fillColor=none;fontSize=14;fontColor=#212121;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="364" y="95" width="100" height="20" as="geometry"/>
+                </mxCell>
+
+                <!-- Rare/anomalous chip -->
+                <mxCell id="legend_red_chip" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fefafa;strokeColor=#c0504d;strokeWidth=1.5;" parent="1" vertex="1">
+                    <mxGeometry x="476" y="95" width="24" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="legend_red_lbl" value="Rare destination state" style="text;html=1;align=left;strokeColor=none;fillColor=none;fontSize=14;fontColor=#212121;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="508" y="95" width="170" height="20" as="geometry"/>
+                </mxCell>
+
+                <!-- Edge label note -->
+                <mxCell id="legend_edge_lbl" value="Edge label = P̂(s&lt;sub&gt;j&lt;/sub&gt; | s&lt;sub&gt;i&lt;/sub&gt;)" style="text;html=1;align=left;strokeColor=none;fillColor=none;fontSize=14;fontStyle=2;fontColor=#444444;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="700" y="95" width="220" height="20" as="geometry"/>
+                </mxCell>
+
+                <!-- =================================================================
+                     State nodes (5 in a row, normal-flow excerpt)
+                     5 × 170 wide + 4 × 30 gaps = 970 wide → centered, x=65
+                     y=240, h=60
+                     ================================================================= -->
+
+                <mxCell id="s_sib" value="&lt;b style=&quot;font-size:14px;color:#1f77b4&quot;&gt;SIB Broadcast&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;font-style:italic;color:#666666&quot;&gt;(RRC, DL, SIB, LTE)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d6e9f8;strokeColor=#1f77b4;strokeWidth=1.2;fontSize=13;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="65" y="240" width="170" height="60" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="s_setup" value="&lt;b style=&quot;font-size:14px;color:#1f77b4&quot;&gt;RRC Conn Setup&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;font-style:italic;color:#666666&quot;&gt;(RRC, DL, ConnSetup, LTE)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d6e9f8;strokeColor=#1f77b4;strokeWidth=1.2;fontSize=13;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="265" y="240" width="170" height="60" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="s_attach" value="&lt;b style=&quot;font-size:14px;color:#d95f02&quot;&gt;Attach Request&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;font-style:italic;color:#666666&quot;&gt;(NAS, UL, AttachReq, LTE)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4c4;strokeColor=#d95f02;strokeWidth=1.2;fontSize=13;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="465" y="240" width="170" height="60" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="s_smc" value="&lt;b style=&quot;font-size:14px;color:#d95f02&quot;&gt;Security Mode Cmd&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;font-style:italic;color:#666666&quot;&gt;(NAS, DL, SMC, LTE)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4c4;strokeColor=#d95f02;strokeWidth=1.2;fontSize=13;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="665" y="240" width="170" height="60" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="s_smcomp" value="&lt;b style=&quot;font-size:14px;color:#d95f02&quot;&gt;SM Complete&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;font-style:italic;color:#666666&quot;&gt;(NAS, UL, SMComplete, LTE)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce4c4;strokeColor=#d95f02;strokeWidth=1.2;fontSize=13;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="865" y="240" width="170" height="60" as="geometry"/>
+                </mxCell>
+
+                <!-- =================================================================
+                     Anomaly node (rare destination), below s_smcomp
+                     ================================================================= -->
+                <mxCell id="s_anom" value="&lt;b style=&quot;font-size:14px;color:#c0504d&quot;&gt;Identity Request&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;font-style:italic;color:#666666&quot;&gt;(NAS, DL, IdentityReq, LTE)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fefafa;strokeColor=#c0504d;strokeWidth=1.5;fontSize=13;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="865" y="430" width="170" height="60" as="geometry"/>
+                </mxCell>
+
+                <!-- =================================================================
+                     Edges between consecutive normal-flow states
+                     Per DESIGN_GUIDELINES: endArrow=classic; #444444; strokeWidth=1.5
+                     Edge labels: fontSize=13; #212121
+                     Labels are attached as edge child geometry (relative=1) so they
+                     sit on the edge midpoint instead of as floating text boxes.
+                     ================================================================= -->
+
+                <mxCell id="e_sib_setup" value="0.50" style="endArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;fontSize=13;fontColor=#212121;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1" source="s_sib" target="s_setup">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="e_setup_attach" value="0.92" style="endArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;fontSize=13;fontColor=#212121;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1" source="s_setup" target="s_attach">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="e_attach_smc" value="0.94" style="endArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;fontSize=13;fontColor=#212121;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1" source="s_attach" target="s_smc">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="e_smc_smcomp" value="0.96" style="endArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;fontSize=13;fontColor=#212121;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1" source="s_smc" target="s_smcomp">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+
+                <!-- =================================================================
+                     Anomaly edge: s_smcomp -> s_anom
+                     Per DESIGN_GUIDELINES error/recovery flow: #d95f02 dashed 1.2
+                     Adapted: anomalous transition uses red (#c0504d) since the
+                     destination node itself is red, dashed for "alternative path"
+                     semantics. Label sits on edge midpoint via labelBackgroundColor.
+                     ================================================================= -->
+                <mxCell id="e_smcomp_anom" value="0.0007" style="endArrow=classic;html=1;strokeColor=#c0504d;strokeWidth=2;dashed=1;fontSize=13;fontStyle=1;fontColor=#c0504d;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" edge="1" source="s_smcomp" target="s_anom">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+
+                <!-- Annotation next to the anomaly edge -->
+                <mxCell id="t_anom_note" value="rare transition&lt;br&gt;high σ&lt;sub&gt;t&lt;/sub&gt; ⇒ chunk flagged" style="text;html=1;align=left;strokeColor=none;fillColor=none;fontSize=13;fontStyle=2;fontColor=#c0504d;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="700" y="370" width="160" height="40" as="geometry"/>
+                </mxCell>
+
+                <!-- =================================================================
+                     Footer: tuple-notation explainer
+                     ================================================================= -->
+                <mxCell id="t_footer" value="Tuple notation: (packet type τ, direction δ, message identifier μ, access-network type ν)" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=13;fontStyle=2;fontColor=#444444;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="540" width="900" height="20" as="geometry"/>
+                </mxCell>
+
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

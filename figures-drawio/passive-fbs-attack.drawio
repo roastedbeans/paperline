@@ -1,0 +1,150 @@
+<mxfile host="65bd71144e">
+    <diagram name="Passive FBS Attack" id="passive-fbs-attack">
+        <mxGraphModel dx="128" dy="203" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1050" pageHeight="540" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="c_harvested" value="Harvested Information" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fefafa;strokeColor=#c0504d;dashed=1;strokeWidth=1;fontSize=15;fontStyle=1;fontColor=#c0504d;verticalAlign=top;align=left;spacingLeft=12;spacingTop=6;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="370" width="970" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="wave_dl" style="endArrow=classic;html=1;curved=1;strokeColor=#1f77b4;strokeWidth=1.8;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="910" y="100" as="sourcePoint"/>
+                        <mxPoint x="140" y="100" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="890" y="112"/>
+                            <mxPoint x="860" y="88"/>
+                            <mxPoint x="830" y="112"/>
+                            <mxPoint x="800" y="88"/>
+                            <mxPoint x="770" y="112"/>
+                            <mxPoint x="740" y="88"/>
+                            <mxPoint x="710" y="112"/>
+                            <mxPoint x="680" y="88"/>
+                            <mxPoint x="650" y="112"/>
+                            <mxPoint x="620" y="88"/>
+                            <mxPoint x="590" y="112"/>
+                            <mxPoint x="560" y="88"/>
+                            <mxPoint x="530" y="112"/>
+                            <mxPoint x="500" y="88"/>
+                            <mxPoint x="470" y="112"/>
+                            <mxPoint x="440" y="88"/>
+                            <mxPoint x="410" y="112"/>
+                            <mxPoint x="380" y="88"/>
+                            <mxPoint x="350" y="112"/>
+                            <mxPoint x="320" y="88"/>
+                            <mxPoint x="290" y="112"/>
+                            <mxPoint x="260" y="88"/>
+                            <mxPoint x="230" y="112"/>
+                            <mxPoint x="200" y="88"/>
+                            <mxPoint x="170" y="112"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="wave_ul" style="endArrow=classic;html=1;curved=1;strokeColor=#1f77b4;strokeWidth=1.8;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="140" y="140" as="sourcePoint"/>
+                        <mxPoint x="910" y="140" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="170" y="152"/>
+                            <mxPoint x="200" y="128"/>
+                            <mxPoint x="230" y="152"/>
+                            <mxPoint x="260" y="128"/>
+                            <mxPoint x="290" y="152"/>
+                            <mxPoint x="320" y="128"/>
+                            <mxPoint x="350" y="152"/>
+                            <mxPoint x="380" y="128"/>
+                            <mxPoint x="410" y="152"/>
+                            <mxPoint x="440" y="128"/>
+                            <mxPoint x="470" y="152"/>
+                            <mxPoint x="500" y="128"/>
+                            <mxPoint x="530" y="152"/>
+                            <mxPoint x="560" y="128"/>
+                            <mxPoint x="590" y="152"/>
+                            <mxPoint x="620" y="128"/>
+                            <mxPoint x="650" y="152"/>
+                            <mxPoint x="680" y="128"/>
+                            <mxPoint x="710" y="152"/>
+                            <mxPoint x="740" y="128"/>
+                            <mxPoint x="770" y="152"/>
+                            <mxPoint x="800" y="128"/>
+                            <mxPoint x="830" y="152"/>
+                            <mxPoint x="860" y="128"/>
+                            <mxPoint x="890" y="152"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="wave_eavesdrop" style="endArrow=classic;html=1;curved=1;strokeColor=#c0504d;strokeWidth=1.5;dashed=1;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="525" y="160" as="sourcePoint"/>
+                        <mxPoint x="525" y="235" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="537" y="175"/>
+                            <mxPoint x="513" y="195"/>
+                            <mxPoint x="537" y="215"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e_extract" style="endArrow=classic;html=1;strokeColor=#c0504d;strokeWidth=1.2;dashed=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="525" y="345" as="sourcePoint"/>
+                        <mxPoint x="525" y="370" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="t_dl_label" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;Downlink&lt;/b&gt; · MIB · SIB · Paging · RAR · RRC Setup" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#1f77b4;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="55" width="610" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="t_ul_label" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;Uplink&lt;/b&gt; · RRC Connection Request (pre-AS-security)" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#1f77b4;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="165" width="610" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="t_eaves_label" value="passively eavesdrops&lt;br style=&quot;font-size: 14px;&quot;&gt;(DL &amp;amp; UL)" style="text;html=1;align=left;strokeColor=none;fillColor=none;fontSize=14;fontStyle=2;fontColor=#c0504d;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="190" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="t_extract_label" value="extracts" style="text;html=1;align=left;strokeColor=none;fillColor=none;fontSize=14;fontStyle=2;fontColor=#c0504d;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="535" y="348" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="icon_ue" value="" style="shape=mxgraph.networks.cell_phone_1;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#212121;verticalLabelPosition=bottom;verticalAlign=top;rounded=1;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="80" width="40" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_ue" value="UE" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=14;fontStyle=1;fontColor=#212121;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="170" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="icon_enb" value="" style="shape=mxgraph.networks.radio_tower;html=1;whiteSpace=wrap;fillColor=#1f77b4;strokeColor=#1f77b4;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="920" y="80" width="40" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_enb" value="Legitimate&lt;br&gt;eNB / gNB" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=14;fontStyle=1;fontColor=#212121;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="855" y="170" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="icon_fbs" value="" style="shape=mxgraph.networks.radio_tower;html=1;whiteSpace=wrap;fillColor=#c0504d;strokeColor=#c0504d;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="235" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="icon_fbs_warn" value="!" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c0504d;strokeColor=#ffffff;strokeWidth=1.5;fontSize=12;fontStyle=1;fontColor=#ffffff;align=center;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="536" y="235" width="18" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_fbs" value="Passive FBS" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1;fontColor=#c0504d;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="300" width="150" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_fbs_sub" value="(silent observer, non-transmitting)" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=14;fontStyle=2;fontColor=#555555;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="420" y="322" width="210" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_crnti" value="&lt;b&gt;C-RNTI&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-weight:normal;color:#555555&quot;&gt;RA Response&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c0504d;strokeWidth=1;fontSize=13;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="410" width="170" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_tmsi" value="&lt;b&gt;ue-Identity / TMSI&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-weight:normal;color:#555555&quot;&gt;RRC Conn Request&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c0504d;strokeWidth=1;fontSize=13;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="410" width="170" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_contention" value="&lt;b&gt;Contention Resolution ID&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-weight:normal;color:#555555&quot;&gt;RRC Conn Setup&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c0504d;strokeWidth=1;fontSize=13;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="410" width="170" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_phy" value="&lt;b&gt;PHY Parameters&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-weight:normal;color:#555555&quot;&gt;modulation, coding&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c0504d;strokeWidth=1;fontSize=13;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="630" y="410" width="170" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_guti" value="&lt;b&gt;GUTI / TMSI&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-weight:normal;color:#555555&quot;&gt;Paging message&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c0504d;strokeWidth=1;fontSize=13;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="820" y="410" width="170" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;rounded=1;fontSize=14;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="107" y="150" width="5" height="5" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

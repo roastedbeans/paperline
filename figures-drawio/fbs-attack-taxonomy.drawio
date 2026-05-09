@@ -1,0 +1,180 @@
+<mxfile host="65bd71144e">
+    <diagram name="FBS Attack Taxonomy" id="fbs-attack-taxonomy">
+        <mxGraphModel dx="529" dy="1080" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1050" pageHeight="540" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="trunk_passive" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="130" as="sourcePoint"/>
+                        <mxPoint x="200" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="trunk_mitm" style="endArrow=none;html=1;strokeColor=#1f77b4;strokeWidth=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="390" y="200" as="sourcePoint"/>
+                        <mxPoint x="390" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="trunk_injection" style="endArrow=none;html=1;strokeColor=#7a378b;strokeWidth=1;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="560" y="200" as="sourcePoint"/>
+                        <mxPoint x="560" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="trunk_downgrade" style="endArrow=none;html=1;strokeColor=#d95f02;strokeWidth=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="730" y="200" as="sourcePoint"/>
+                        <mxPoint x="730" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="trunk_dos" style="endArrow=none;html=1;strokeColor=#c0504d;strokeWidth=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="900" y="200" as="sourcePoint"/>
+                        <mxPoint x="900" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e_active_mitm" style="endArrow=none;html=1;strokeColor=#666666;strokeWidth=1;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="390" y="130" as="sourcePoint"/>
+                        <mxPoint x="390" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e_active_injection" style="endArrow=none;html=1;strokeColor=#666666;strokeWidth=1;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="390" y="130" as="sourcePoint"/>
+                        <mxPoint x="560" y="160" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="390" y="145"/>
+                            <mxPoint x="560" y="145"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e_active_downgrade" style="endArrow=none;html=1;strokeColor=#666666;strokeWidth=1;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="390" y="130" as="sourcePoint"/>
+                        <mxPoint x="730" y="160" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="390" y="145"/>
+                            <mxPoint x="730" y="145"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e_active_dos" style="endArrow=none;html=1;strokeColor=#666666;strokeWidth=1;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="390" y="130" as="sourcePoint"/>
+                        <mxPoint x="900" y="160" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="390" y="145"/>
+                            <mxPoint x="900" y="145"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e_root_passive" style="endArrow=none;html=1;strokeColor=#666666;strokeWidth=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="295" y="60" as="sourcePoint"/>
+                        <mxPoint x="200" y="90" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="295" y="75"/>
+                            <mxPoint x="200" y="75"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e_root_active" style="endArrow=none;html=1;strokeColor=#666666;strokeWidth=1;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="295" y="60" as="sourcePoint"/>
+                        <mxPoint x="390" y="90" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="295" y="75"/>
+                            <mxPoint x="390" y="75"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="n_root" value="False Base Station Attack" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#212121;strokeWidth=1.5;fontSize=16;fontStyle=1;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="20" width="270" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="c_passive" value="Passive Attack" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#212121;strokeWidth=1.5;fontSize=16;fontStyle=1;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="90" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="c_active" value="Active Attack" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#212121;strokeWidth=1.5;fontSize=16;fontStyle=1;fontColor=#212121;align=center;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="90" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="s_mitm" value="MITM / Impersonation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fafcfe;strokeColor=#1f77b4;strokeWidth=1.5;fontSize=16;fontStyle=1;fontColor=#1f77b4;align=center;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="160" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="s_injection" value="Message Injection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fcfafe;strokeColor=#7a378b;strokeWidth=1.5;fontSize=16;fontStyle=1;fontColor=#7a378b;align=center;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="160" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="s_downgrade" value="Downgrade" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fefdfa;strokeColor=#d95f02;strokeWidth=1.5;fontSize=16;fontStyle=1;fontColor=#d95f02;align=center;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="160" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="s_dos" value="Denial of Service" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fefafa;strokeColor=#c0504d;strokeWidth=1.5;fontSize=16;fontStyle=1;fontColor=#c0504d;align=center;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="830" y="160" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_passive_imsi" value="IMSI / SUPI Catching" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#888888;fontSize=16;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="160" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_passive_loc" value="Location Tracking" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#888888;fontSize=16;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="230" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_passive_traffic" value="Traffic Analysis" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#888888;fontSize=16;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="300" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_passive_finger" value="SI Fingerprinting" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#888888;fontSize=16;fontColor=#212121;align=center;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="370" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_passive_eaves" value="Eavesdropping" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#888888;fontSize=16;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="440" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_mitm_alter" value="aLTEr" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1f77b4;fontSize=16;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="230" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_mitm_imp4gt" value="IMP4GT" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1f77b4;fontSize=16;fontColor=#212121;align=center;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="300" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_mitm_sib" value="SIB Spoofing" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1f77b4;fontSize=16;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="370" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_mitm_aka" value="AKA Relay" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#1f77b4;fontSize=16;fontColor=#212121;align=center;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="440" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_inj_idreq" value="Identity Request" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7a378b;fontSize=16;fontColor=#212121;align=center;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="230" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_inj_paging" value="Paging Injection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7a378b;fontSize=16;fontColor=#212121;align=center;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="300" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_inj_sms" value="SMS / Smishing" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7a378b;fontSize=16;fontColor=#212121;align=center;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="370" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_inj_nas" value="NAS / RRC Inject" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7a378b;fontSize=16;fontColor=#212121;align=center;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="440" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_down_2g3g" value="RAT Downgrade" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d95f02;fontSize=16;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="230" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_down_algo" value="EEA0 / NIA0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d95f02;fontSize=16;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="300" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_down_aka" value="AKA Bypass" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d95f02;fontSize=16;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="370" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_down_taurej" value="TAU Reject" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d95f02;fontSize=16;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="440" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_dos_authrej" value="Auth Reject" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c0504d;fontSize=16;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="830" y="230" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_dos_attachrej" value="Attach Reject" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c0504d;fontSize=16;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="830" y="300" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_dos_rrcrej" value="RRC Reject" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c0504d;fontSize=16;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="830" y="370" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_dos_jam" value="Smart Jamming" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c0504d;fontSize=16;fontColor=#212121;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="830" y="440" width="140" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

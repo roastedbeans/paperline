@@ -1,0 +1,89 @@
+<mxfile host="65bd71144e">
+    <diagram name="Active FBS Adversarial Model" id="adv-model">
+        <mxGraphModel dx="128" dy="203" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="600" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+
+                <!-- ===== Capability container (rendered first so it sits behind cards) ===== -->
+                <mxCell id="c_caps" value="Active Dolev–Yao Adversary on RRC / NAS until Security Mode Complete" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fefafa;strokeColor=#c0504d;dashed=1;strokeWidth=1;fontSize=15;fontStyle=1;fontColor=#c0504d;verticalAlign=top;align=left;spacingLeft=12;spacingTop=6;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="350" width="1020" height="200" as="geometry"/>
+                </mxCell>
+
+                <!-- ===== Backhaul: short vertical from core down to legit eNB ===== -->
+                <mxCell id="e_backhaul" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="s_core" target="icon_enb">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="t_backhaul" value="S1 / N2 backhaul" style="text;html=1;align=left;strokeColor=none;fillColor=none;fontSize=13;fontStyle=2;fontColor=#888888;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="135" width="120" height="20" as="geometry"/>
+                </mxCell>
+
+                <!-- ===== Legitimate downlink (weaker, dashed thin blue) ===== -->
+                <mxCell id="e_legit_dl" style="endArrow=classic;html=1;strokeColor=#1f77b4;strokeWidth=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="icon_enb" target="icon_ue">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="t_legit_label" value="Legitimate RRC / NAS · weaker RSRP" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=13;fontStyle=2;fontColor=#1f77b4;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="195" width="340" height="18" as="geometry"/>
+                </mxCell>
+
+                <!-- ===== FBS overshadowing (thicker solid red) ===== -->
+                <mxCell id="e_fbs_dl" style="endArrow=classic;html=1;strokeColor=#c0504d;strokeWidth=2.6;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="icon_fbs" target="icon_ue">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="t_fbs_label" value="Forged RRC / NAS · stronger RSRP" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=13;fontStyle=1;fontColor=#c0504d;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="195" width="320" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="t_fbs_subtitle" value="UE attaches to FBS" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=12;fontStyle=2;fontColor=#c0504d;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="232" width="320" height="18" as="geometry"/>
+                </mxCell>
+
+                <!-- ===== Operator Core (cloud, top-left) ===== -->
+                <mxCell id="s_core" value="Operator Core&lt;br&gt;&lt;span style=&quot;font-weight:normal;font-size:12px;color:#555555&quot;&gt;(AMF / MME, HSS / UDM)&lt;/span&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#888888;strokeWidth=1.2;fontSize=15;fontStyle=1;fontColor=#212121;verticalAlign=middle;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="40" width="200" height="70" as="geometry"/>
+                </mxCell>
+
+                <!-- ===== Legitimate eNB / gNB (radio tower, blue) ===== -->
+                <mxCell id="icon_enb" value="" style="shape=mxgraph.networks.radio_tower;html=1;whiteSpace=wrap;fillColor=#1f77b4;strokeColor=#1f77b4;verticalLabelPosition=bottom;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="180" width="40" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_enb" value="Legitimate&lt;br&gt;eNB / gNB" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=14;fontStyle=1;fontColor=#1f77b4;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="270" width="160" height="36" as="geometry"/>
+                </mxCell>
+
+                <!-- ===== UE (cell phone, center) ===== -->
+                <mxCell id="icon_ue" value="" style="shape=mxgraph.networks.cell_phone_1;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#212121;verticalLabelPosition=bottom;verticalAlign=top;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="180" width="40" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_ue" value="UE" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1;fontColor=#212121;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="270" width="120" height="20" as="geometry"/>
+                </mxCell>
+
+                <!-- ===== FBS (radio tower, red, with warning marker) ===== -->
+                <mxCell id="icon_fbs" value="" style="shape=mxgraph.networks.radio_tower;html=1;whiteSpace=wrap;fillColor=#c0504d;strokeColor=#c0504d;verticalLabelPosition=bottom;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="940" y="180" width="40" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="icon_fbs_warn" value="!" style="ellipse;whiteSpace=wrap;html=1;fillColor=#c0504d;strokeColor=#ffffff;strokeWidth=1.5;fontSize=12;fontStyle=1;fontColor=#ffffff;align=center;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="976" y="180" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="l_fbs" value="False Base Station&lt;br&gt;&lt;span style=&quot;font-style:italic;font-weight:normal;font-size:12px;color:#555555&quot;&gt;rogue, no backhaul to core&lt;/span&gt;" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=14;fontStyle=1;fontColor=#c0504d;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="860" y="270" width="200" height="36" as="geometry"/>
+                </mxCell>
+
+                <!-- ===== Capability cards: 4 across, 30px gaps, centered in container ===== -->
+                <mxCell id="cap_eavesdrop" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;Eavesdrop&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size: 13px; color:#212121;&quot;&gt;Read every pre-AS-security RRC and NAS frame in the clear: SIB, Identity Request / Response, Authentication Request, Capability Enquiry.&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c0504d;strokeWidth=1;fontSize=13;fontColor=#c0504d;align=center;verticalAlign=top;spacingTop=6;" parent="1" vertex="1">
+                    <mxGeometry x="65" y="410" width="220" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="cap_modify" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;Modify&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size: 13px; color:#212121;&quot;&gt;Alter unprotected frame contents in transit: rewrite ue-Capability bits, force null ciphering / null integrity, swap PLMN / TAC values in SIB.&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c0504d;strokeWidth=1;fontSize=13;fontColor=#c0504d;align=center;verticalAlign=top;spacingTop=6;" parent="1" vertex="1">
+                    <mxGeometry x="315" y="410" width="220" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="cap_drop" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;Drop&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size: 13px; color:#212121;&quot;&gt;Suppress expected frames so the UE retries or stalls: Authentication Request, Security Mode Command, Attach Accept, keeping the UE on the rogue cell.&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c0504d;strokeWidth=1;fontSize=13;fontColor=#c0504d;align=center;verticalAlign=top;spacingTop=6;" parent="1" vertex="1">
+                    <mxGeometry x="565" y="410" width="220" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="cap_inject" value="&lt;b style=&quot;font-size: 16px;&quot;&gt;Inject&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;font-size: 13px; color:#212121;&quot;&gt;Synthesize new frames the UE will accept: forged Identity Request to harvest IMSI, forged TAU / Attach Reject to deny service, forged RRC Reconfiguration.&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#c0504d;strokeWidth=1;fontSize=13;fontColor=#c0504d;align=center;verticalAlign=top;spacingTop=6;" parent="1" vertex="1">
+                    <mxGeometry x="815" y="410" width="220" height="120" as="geometry"/>
+                </mxCell>
+
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

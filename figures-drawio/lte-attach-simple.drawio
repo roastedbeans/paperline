@@ -1,0 +1,202 @@
+<mxfile host="65bd71144e">
+    <diagram name="LTE Attach (simplified)" id="lte-attach-simple">
+        <mxGraphModel dx="128" dy="203" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="700" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+
+                <!-- =================================================================
+                     Layout constants
+                     UE lifeline x = 200
+                     gNB/MME lifeline x = 660
+                     Background container x = 170, width = 520 (200-30 to 660+30)
+                     Section label x = 70, width = 80, right edge = 150
+                     Slot pitch = 50, top padding = 10, bottom padding = 30 (no-sub last)
+                     ================================================================= -->
+
+                <!-- ===== Section backgrounds (rendered first) ===== -->
+
+                <!-- Pre-AS security: messages 0-5 (6 messages)
+                     section starts y=70 (just below actor headers)
+                     section_h = 10 + 5*50 + 20 + 30 = 310 -->
+                <mxCell id="bg_preas" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fefafa;strokeColor=#c0504d;dashed=1;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="70" width="520" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="lbl_preas" value="Pre-AS&lt;br&gt;security" style="text;html=1;align=right;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1;fontColor=#c0504d;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="195" width="80" height="40" as="geometry"/>
+                </mxCell>
+
+                <!-- Integrity protected: messages 6-10 (5 messages)
+                     section starts y=390 (10 px gap after pre-AS section)
+                     section_h = 10 + 4*50 + 20 + 30 = 260 -->
+                <mxCell id="bg_postas" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8fcf8;strokeColor=#22b427;dashed=1;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="390" width="520" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="lbl_postas" value="Integrity&lt;br&gt;protected" style="text;html=1;align=right;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1;fontColor=#22b427;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="490" width="80" height="40" as="geometry"/>
+                </mxCell>
+
+                <!-- ===== Actor headers ===== -->
+                <mxCell id="actor_ue" value="UE" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1;fontColor=#212121;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="30" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="actor_nw" value="gNB / MME" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1;fontColor=#212121;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="30" width="120" height="30" as="geometry"/>
+                </mxCell>
+
+                <!-- ===== Lifelines ===== -->
+                <mxCell id="ll_ue" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1;dashed=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="60" as="sourcePoint"/>
+                        <mxPoint x="200" y="660" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ll_nw" style="endArrow=none;html=1;strokeColor=#888888;strokeWidth=1;dashed=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="60" as="sourcePoint"/>
+                        <mxPoint x="660" y="660" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+
+                <!-- ===== Messages =====
+                     Slot pitch 50, label cell h=20 (text bottom-aligned to arrow),
+                     subtitle cell h=20 starting at arrow_y (text top-aligned).
+                     Arrow goes between lifelines at y = slot_y + 20.
+                     ===== -->
+
+                <!-- Message 0: SIB / MIB broadcast (DL, with subtitle), slot_y=80 -->
+                <mxCell id="m0_lbl" value="SIB / MIB broadcast" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="80" width="460" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="m0_arrow" style="endArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="100" as="sourcePoint"/>
+                        <mxPoint x="200" y="100" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="m0_sub" value="(unauthenticated)" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=14;fontStyle=2;fontColor=#7a378b;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="100" width="460" height="20" as="geometry"/>
+                </mxCell>
+
+                <!-- Message 1: RRC Connection Request (UL, no subtitle), slot_y=130 -->
+                <mxCell id="m1_lbl" value="RRC Connection Request" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="130" width="460" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="m1_arrow" style="endArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="150" as="sourcePoint"/>
+                        <mxPoint x="660" y="150" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+
+                <!-- Message 2: RRC Connection Setup (DL, no subtitle), slot_y=180 -->
+                <mxCell id="m2_lbl" value="RRC Connection Setup" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="180" width="460" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="m2_arrow" style="endArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="200" as="sourcePoint"/>
+                        <mxPoint x="200" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+
+                <!-- Message 3: Attach Request (UL NAS, no subtitle), slot_y=230 -->
+                <mxCell id="m3_lbl" value="Attach Request (NAS)" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="230" width="460" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="m3_arrow" style="endArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="250" as="sourcePoint"/>
+                        <mxPoint x="660" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+
+                <!-- Message 4: Identity / Auth Request (DL, with subtitle), slot_y=280 -->
+                <mxCell id="m4_lbl" value="Identity / Auth Request" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="280" width="460" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="m4_arrow" style="endArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="300" as="sourcePoint"/>
+                        <mxPoint x="200" y="300" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="m4_sub" value="(IMSI harvested by FBS)" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=14;fontStyle=2;fontColor=#7a378b;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="300" width="460" height="20" as="geometry"/>
+                </mxCell>
+
+                <!-- Message 5: Identity / Auth Response (UL, no subtitle), slot_y=330 -->
+                <mxCell id="m5_lbl" value="Identity / Auth Response" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="330" width="460" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="m5_arrow" style="endArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="350" as="sourcePoint"/>
+                        <mxPoint x="660" y="350" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+
+                <!-- ===== Boundary: SMC starts integrity protection ===== -->
+
+                <!-- Message 6: Security Mode Command (DL, with subtitle), slot_y=400 -->
+                <mxCell id="m6_lbl" value="Security Mode Command" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="400" width="460" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="m6_arrow" style="endArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="420" as="sourcePoint"/>
+                        <mxPoint x="200" y="420" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="m6_sub" value="(integrity activates)" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=14;fontStyle=2;fontColor=#7a378b;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="420" width="460" height="20" as="geometry"/>
+                </mxCell>
+
+                <!-- Message 7: Security Mode Complete (UL, no subtitle), slot_y=450 -->
+                <mxCell id="m7_lbl" value="Security Mode Complete" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="450" width="460" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="m7_arrow" style="endArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="470" as="sourcePoint"/>
+                        <mxPoint x="660" y="470" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+
+                <!-- Message 8: RRC Reconfiguration (DL, no subtitle), slot_y=500 -->
+                <mxCell id="m8_lbl" value="RRC Reconfiguration" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="500" width="460" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="m8_arrow" style="endArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="520" as="sourcePoint"/>
+                        <mxPoint x="200" y="520" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+
+                <!-- Message 9: Reconfiguration Complete (UL, no subtitle), slot_y=550 -->
+                <mxCell id="m9_lbl" value="Reconfiguration Complete" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="550" width="460" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="m9_arrow" style="endArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="570" as="sourcePoint"/>
+                        <mxPoint x="660" y="570" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+
+                <!-- Message 10: Attach Accept (DL NAS ciphered, no subtitle), slot_y=600 -->
+                <mxCell id="m10_lbl" value="Attach Accept (NAS, ciphered)" style="text;html=1;align=center;strokeColor=none;fillColor=none;fontSize=16;fontColor=#212121;verticalAlign=bottom;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="600" width="460" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="m10_arrow" style="endArrow=classic;html=1;strokeColor=#444444;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="660" y="620" as="sourcePoint"/>
+                        <mxPoint x="200" y="620" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
